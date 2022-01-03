@@ -380,6 +380,56 @@
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_FunnelCap</defName>
+					<label>extract funnel cap spores</label>
+					<description>Extract spores from funnel cap flesh.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawFunnelCap</li>
+						  </thingDefs>
+						</filter>
+						<count>4</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawFunnelCap</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_Funnelcap>1</Seed_MorrowRim_Funnelcap>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_Parasol</defName>
+					<label>extract parasol mushroom spores</label>
+					<description>Extract spores from ash fungus flesh.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawAshFungus</li>
+						  </thingDefs>
+						</filter>
+						<count>4</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawAshFungus</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_ParasolMushroom>2</Seed_MorrowRim_ParasolMushroom>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
 
 			</value>
 			</li>

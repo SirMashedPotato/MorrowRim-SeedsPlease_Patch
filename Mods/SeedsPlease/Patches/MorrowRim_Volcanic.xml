@@ -4,6 +4,7 @@
   <Operation Class="PatchOperationFindMod">
     <mods>
       <li>MorrowRim - Volcanic Ashlands</li>
+      <li>MorrowRim - Just the Plants</li>
     </mods>
 
     <match Class="PatchOperationSequence">

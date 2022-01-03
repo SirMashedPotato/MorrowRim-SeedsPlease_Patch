@@ -35,7 +35,6 @@
 					<label>ash yam seeds</label>
 					<sources>
 						<li>MorrowRim_AshYam</li>
-						<li>MorrowRim_AshYam_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Ashyam</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -45,7 +44,6 @@
 					<label>hackle-Lo seeds</label>
 					<sources>
 						<li>MorrowRim_HackleLo</li>
-						<li>MorrowRim_HackleLo_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Hacklelo</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -55,7 +53,6 @@
 					<label>marshmerrow seeds</label>
 					<sources>
 						<li>MorrowRim_Marshmerrow</li>
-						<li>MorrowRim_Marshmerrow_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Marshmerrow</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -65,7 +62,6 @@
 					<label>corkbulb seeds</label>
 					<sources>
 						<li>MorrowRim_CorkBulb</li>
-						<li>MorrowRim_CorkBulb_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Corkbulb</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -102,7 +98,6 @@
 					<label>scathecraw seeds</label>
 					<sources>
 						<li>MorrowRim_Scathecraw</li>
-						<li>MorrowRim_Scathecraw_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Scathecraw</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -130,7 +125,6 @@
 					<label>kreshweed seeds</label>
 					<sources>
 						<li>MorrowRim_Kreshweed</li>
-						<li>MorrowRim_Kreshweed_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Kreshweed</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -139,7 +133,6 @@
 					<defName>Seed_MorrowRim_ParasolMushroom</defName>
 					<label>parasol mushroom spores</label>
 					<sources>
-						<li>MorrowRim_ParasolMushroom</li>
 						<li>MorrowRim_ParasolMushroomCultivated</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/ParasolMushroom</texPath></graphicData>
@@ -432,27 +425,6 @@
 				</RecipeDef>
 
 			</value>
-			</li>
-			
-			<!-- patch for if Grazelands is loaded -->
-			
-			<li Class="PatchOperationFindMod">
-				<mods>
-					<li>MorrowRim - Grazelands</li>
-				</mods> 
-						
-				<match Class="PatchOperationSequence">
-					<operations>
-			
-						<li Class="PatchOperationAdd">
-							<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_MorrowRim_AshHayGrass"]/sources</xpath>
-							<value>
-								<li>MorrowRim_AshHayGrassWild</li>
-							</value>
-						</li>
-
-					</operations>
-				</match>
 			</li>
 
 		</operations>

@@ -3,7 +3,7 @@
 
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>MorrowRim</li>
+      <li>MorrowRim - Just the Plants</li>
     </mods>
 
     <match Class="PatchOperationSequence">
@@ -35,7 +35,6 @@
 					<label>ash yam seeds</label>
 					<sources>
 						<li>MorrowRim_AshYam</li>
-						<li>MorrowRim_AshYam_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Ashyam</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -45,7 +44,6 @@
 					<label>hackle-Lo seeds</label>
 					<sources>
 						<li>MorrowRim_HackleLo</li>
-						<li>MorrowRim_HackleLo_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Hacklelo</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -55,7 +53,6 @@
 					<label>marshmerrow seeds</label>
 					<sources>
 						<li>MorrowRim_Marshmerrow</li>
-						<li>MorrowRim_Marshmerrow_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Marshmerrow</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -65,7 +62,6 @@
 					<label>corkbulb seeds</label>
 					<sources>
 						<li>MorrowRim_CorkBulb</li>
-						<li>MorrowRim_CorkBulb_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Corkbulb</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -102,7 +98,6 @@
 					<label>scathecraw seeds</label>
 					<sources>
 						<li>MorrowRim_Scathecraw</li>
-						<li>MorrowRim_Scathecraw_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Scathecraw</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -130,7 +125,6 @@
 					<label>kreshweed seeds</label>
 					<sources>
 						<li>MorrowRim_Kreshweed</li>
-						<li>MorrowRim_Kreshweed_Wild</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/Kreshweed</texPath></graphicData>
 				</SeedsPlease.SeedDef>
@@ -139,7 +133,6 @@
 					<defName>Seed_MorrowRim_ParasolMushroom</defName>
 					<label>parasol mushroom spores</label>
 					<sources>
-						<li>MorrowRim_ParasolMushroom</li>
 						<li>MorrowRim_ParasolMushroomCultivated</li>
 					</sources>
 					<graphicData><texPath>Things/Item/Seeds/ParasolMushroom</texPath></graphicData>
@@ -167,7 +160,7 @@
 							<li>MorrowRim_RawAshYam</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>4</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -176,7 +169,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_AshYam>20</Seed_MorrowRim_AshYam>
+					  <Seed_MorrowRim_AshYam>3</Seed_MorrowRim_AshYam>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
@@ -192,7 +185,7 @@
 							<li>MorrowRim_RawHackleLo</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>7</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -201,7 +194,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_HackleLo>20</Seed_MorrowRim_HackleLo>
+					  <Seed_MorrowRim_HackleLo>3</Seed_MorrowRim_HackleLo>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
@@ -217,7 +210,7 @@
 							<li>MorrowRim_RawMarshmerrow</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>9</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -226,7 +219,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_Marshmerrow>20</Seed_MorrowRim_Marshmerrow>
+					  <Seed_MorrowRim_Marshmerrow>4</Seed_MorrowRim_Marshmerrow>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
 				</RecipeDef>
@@ -242,7 +235,7 @@
 							<li>MorrowRim_RawCorkbulb</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>4</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -251,7 +244,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_Corkbulb>10</Seed_MorrowRim_Corkbulb>
+					  <Seed_MorrowRim_Corkbulb>4</Seed_MorrowRim_Corkbulb>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
@@ -267,7 +260,7 @@
 							<li>MorrowRim_Muck</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>4</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -276,7 +269,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_MuckSponge>10</Seed_MorrowRim_MuckSponge>
+					  <Seed_MorrowRim_MuckSponge>1</Seed_MorrowRim_MuckSponge>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
 				</RecipeDef>
@@ -292,7 +285,7 @@
 							<li>MorrowRim_RawScathecraw</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>4</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -301,7 +294,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_Scathecraw>20</Seed_MorrowRim_Scathecraw>
+					  <Seed_MorrowRim_Scathecraw>4</Seed_MorrowRim_Scathecraw>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
@@ -317,7 +310,7 @@
 							<li>MorrowRim_RawScribCabbage</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>4</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -326,7 +319,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_Scribcabbage>20</Seed_MorrowRim_Scribcabbage>
+					  <Seed_MorrowRim_Scribcabbage>4</Seed_MorrowRim_Scribcabbage>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
 				</RecipeDef>
@@ -342,7 +335,7 @@
 							<li>MorrowRim_KreshFiber</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>6</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -351,7 +344,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_Kreshweed>10</Seed_MorrowRim_Kreshweed>
+					  <Seed_MorrowRim_Kreshweed>4</Seed_MorrowRim_Kreshweed>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
@@ -367,7 +360,7 @@
 							<li>Hay</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>6</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -376,7 +369,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_AshHayGrass>30</Seed_MorrowRim_AshHayGrass>
+					  <Seed_MorrowRim_AshHayGrass>3</Seed_MorrowRim_AshHayGrass>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
@@ -392,7 +385,7 @@
 							<li>MorrowRim_RawFunnelCap</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>4</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -401,7 +394,7 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_Funnelcap>5</Seed_MorrowRim_Funnelcap>
+					  <Seed_MorrowRim_Funnelcap>1</Seed_MorrowRim_Funnelcap>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
@@ -417,7 +410,7 @@
 							<li>MorrowRim_RawAshFungus</li>
 						  </thingDefs>
 						</filter>
-						<count>5</count>
+						<count>4</count>
 					  </li>
 					</ingredients>
 					<fixedIngredientFilter>
@@ -426,35 +419,14 @@
 					  </thingDefs>
 					</fixedIngredientFilter>
 					<products>
-					  <Seed_MorrowRim_ParasolMushroom>10</Seed_MorrowRim_ParasolMushroom>
+					  <Seed_MorrowRim_ParasolMushroom>2</Seed_MorrowRim_ParasolMushroom>
 					</products>
 					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
 				</RecipeDef>
 
 			</value>
 			</li>
-			
-			<!-- patch for if Grazelands is loaded -->
-			
-			<li Class="PatchOperationFindMod">
-				<mods>
-					<li>MorrowRim - Grazelands</li>
-				</mods> 
-						
-				<match Class="PatchOperationSequence">
-					<operations>
-			
-						<li Class="PatchOperationAdd">
-							<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_MorrowRim_AshHayGrass"]/sources</xpath>
-							<value>
-								<li>MorrowRim_AshHayGrassWild</li>
-							</value>
-						</li>
-
-					</operations>
-				</match>
-			</li>
-
+		
 		</operations>
 
     </match>

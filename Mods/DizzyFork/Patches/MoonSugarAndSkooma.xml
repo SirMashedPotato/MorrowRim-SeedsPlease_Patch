@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Moon Sugar and Skooma</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+		
+			<!-- seeds -->
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_MoonSugarCane</defName>
+							<label>moon sugar cane seeds</label>
+							<sources>
+								<li>MorrowRim_MoonSugarCane</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Moonsugarcane</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+		
+			<!-- recipe -->
+					
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_MoonSugarCane</defName>
+							<label>extract moon sugar cane seeds</label>
+							<description>Extract seeds from moon sugar cane.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_RawMoonSugarCane</li>
+								  </thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_RawMoonSugarCane</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_MoonSugarCane>10</Seed_MorrowRim_MoonSugarCane>
+							</products>
+							<researchPrerequisite>MorrowRim_MoonSugarCaneGrowing</researchPrerequisite>
+						</RecipeDef>
+						
+				</value>
+			</li>
+		
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

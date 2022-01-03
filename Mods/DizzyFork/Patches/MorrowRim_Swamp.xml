@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Ashlands Swamp</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+		
+			<!-- seeds -->
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_WeepingParasol</defName>
+							<label>weeping parasol spores</label>
+							<sources>
+								<li>MorrowRim_WeepingParasol</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Weepingparasol</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_MiasmaSponge</defName>
+							<label>miasma sponge spores</label>
+							<sources>
+								<li>MorrowRim_MiasmaSponge</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Miasmasponge</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_SloughFern</defName>
+							<label>slough fern spores</label>
+							<sources>
+								<li>MorrowRim_SloughFern</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Sloughfern</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_FilterFern</defName>
+							<label>filter fern spores</label>
+							<sources>
+								<li>MorrowRim_FilterFern</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Filterfern</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_FulgurSpore</defName>
+							<label>fulgur spore spores</label>
+							<sources>
+								<li>MorrowRim_FulgurSpore</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/FulgurSpore</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+
+			<!-- recipe -->
+
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_SloughFern</defName>
+							<label>extract slough fern spores</label>
+							<description>Extract spores from slough spore pods.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_SloughSporePod</li>
+								  </thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_SloughSporePod</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_SloughFern>10</Seed_MorrowRim_SloughFern>
+							</products>
+							<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
+						</RecipeDef>
+						
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_FilterFern</defName>
+							<label>extract filter fern spores</label>
+							<description>Extract spores from filter spore pods.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_FilterSporePod</li>
+								  </thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_FilterSporePod</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_FilterFern>10</Seed_MorrowRim_FilterFern>
+							</products>
+							<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+						</RecipeDef>
+						
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_MiasmaSponge</defName>
+							<label>extract miasma sponge spores</label>
+							<description>Extract spores from swamp moss.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_SwampMoss</li>
+								  </thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_SwampMoss</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_MiasmaSponge>10</Seed_MorrowRim_MiasmaSponge>
+							</products>
+							<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
+						</RecipeDef>
+						
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_WeepingParasol</defName>
+							<label>extract weeping parasol spores</label>
+							<description>Extract spores from swamp moss.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_SwampMoss</li>
+								  </thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_SwampMoss</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_WeepingParasol>10</Seed_MorrowRim_WeepingParasol>
+							</products>
+							<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+						</RecipeDef>
+						
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_EmpororParasolSwamp</defName>
+							<label>extract emporor parasol spores</label>
+							<description>Extract spores from swamp moss.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_SwampMoss</li>
+								  </thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_SwampMoss</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_EmporerParasol>10</Seed_MorrowRim_EmporerParasol>
+							</products>
+							<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+						</RecipeDef>
+						
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_FulgurSpore</defName>
+							<label>extract fulgur spore spores</label>
+							<description>Extract spores from swamp moss.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_SwampMoss</li>
+								  </thingDefs>
+								</filter>
+								<count>5</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_SwampMoss</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_FulgurSpore>10</Seed_MorrowRim_FulgurSpore>
+							</products>
+							<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
+						</RecipeDef>
+						
+				</value>
+			</li>
+
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

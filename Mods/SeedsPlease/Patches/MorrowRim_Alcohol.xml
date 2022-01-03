@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Alcohol</li>
+      <li>MorrowRim - Alcohol Remade</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+		
+			<!-- seeds -->
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_Comberry</defName>
+							<label>comberry seeds</label>
+							<sources>
+								<li>MorrowRim_comberry</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Comberry</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_Saltrice</defName>
+							<label>saltrice seeds</label>
+							<sources>
+								<li>MorrowRim_saltrice</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Saltrice</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_Wickwheat</defName>
+							<label>wickwheat seeds</label>
+							<sources>
+								<li>MorrowRim_wickwheat</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Wickwheat</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+				</value>
+			</li>
+		
+			<!-- recipe -->
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_Comberry</defName>
+							<label>extract comberry seeds</label>
+							<description>Extract seeds from raw comberry.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_RawComberry</li>
+								  </thingDefs>
+								</filter>
+								<count>4</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_RawComberry</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_Comberry>3</Seed_MorrowRim_Comberry>
+							</products>
+							<researchPrerequisite>MorrowRim_BoozeGrowing</researchPrerequisite>
+						</RecipeDef>
+						
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_Saltrice</defName>
+							<label>extract saltrice seeds</label>
+							<description>Extract seeds from raw saltrice.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_RawSaltrice</li>
+								  </thingDefs>
+								</filter>
+								<count>4</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_RawSaltrice</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_Saltrice>3</Seed_MorrowRim_Saltrice>
+							</products>
+							<researchPrerequisite>MorrowRim_BoozeGrowing</researchPrerequisite>
+						</RecipeDef>
+						
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_Wickwheat</defName>
+							<label>extract wickwheat seeds</label>
+							<description>Extract seeds from raw wickwheat.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_RawWickwheat</li>
+								  </thingDefs>
+								</filter>
+								<count>4</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_RawWickwheat</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_Wickwheat>3</Seed_MorrowRim_Wickwheat>
+							</products>
+							<researchPrerequisite>MorrowRim_BoozeGrowing</researchPrerequisite>
+						</RecipeDef>
+						
+				</value>
+			</li>
+			
+			  <!-- patch for if MorrowRim is loaded -->
+  
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>MorrowRim</li>
+				</mods> 
+						
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/RecipeDef[defName="MorrowRim_ExtractSeed_Comberry" or defName="MorrowRim_ExtractSeed_Saltrice" or defName="MorrowRim_ExtractSeed_Wickwheat" ]/researchPrerequisite</xpath>
+							<value>
+								<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_MorrowRim_Saltrice"]/sources</xpath>
+							<value>
+								<li>MorrowRim_saltrice_Wild</li>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_MorrowRim_Comberry"]/sources</xpath>
+							<value>
+								<li>MorrowRim_comberry_Wild</li>
+							</value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_MorrowRim_Wickwheat"]/sources</xpath>
+							<value>
+								<li>MorrowRim_wickwheat_Wild</li>
+							</value>
+						</li>
+
+					</operations>
+				</match>
+			</li>
+			
+			<!-- patch for if Grazelands is loaded -->
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>MorrowRim - Grazelands</li>
+				</mods> 
+						
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_MorrowRim_Wickwheat"]/sources</xpath>
+							<value>
+								<li>MorrowRim_GrazelandsWickwheat</li>
+							</value>
+						</li>
+
+					</operations>
+				</match>
+			</li>
+			
+		
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

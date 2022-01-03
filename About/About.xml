@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>MorrowRim - SeedsPlease Patch</name>
+	<packageId>SirMashedPotato.MorrowRim.SeedsPleasePatch</packageId>
+	<author>SirMashedPotato</author>
+	<supportedVersions>
+    	<li>1.1</li>
+    	<li>1.2</li>
+    	<li>1.3</li>
+	</supportedVersions>
+	<description>Adds seeds and extraction recipes for the plants added in MorrowRim.\n\n-Requires SeedsPlease or Dizzy Fork\n-Includes a patch for MorrowRim\n-Includes a patch for MorrowRim: Moon Sugar and Skooma\n-Includes a patch for MorrowRim: Alcohol\n-Includes a patch for MorrowRim: Ashlands Swamp\n-Includes a patch for MorrowRim: Alcohol Remade\n-Includes a patch for MorrowRim: Bloodmoon\n-Includes a patch for MorrowRim: Volcanic Ashlands\n-Includes a patch for MorrowRim: Grazelands\n-Based on the 'Elder Scrolls' series by Bethesda Game Studios.
+	</description>
+	<modDependencies>
+    </modDependencies>
+	<loadAfter>
+	  <li>notfood.SeedsPlease</li>
+	  <li>Dizzy.SeedsPlease</li>
+      <li>SirMashedPotato.MorrowRim</li>
+	  <li>SirMashedPotato.MorrowRim.MoonSugarAndSkooma</li>
+	  <li>SirMashedPotato.MorrowRim.Alcohol</li>
+	  <li>SirMashedPotato.MorrowRim.AlcoholRemade</li>
+	  <li>SirMashedPotato.MorrowRim.AshSwamp</li>
+	  <li>SirMashedPotato.MorrowRim.VolcanicAshlands</li>
+	  <li>SirMashedPotato.MorrowRim.Grazelands</li>
+	  <li>SirMashedPotato.MorrowRim.Bloodmoon</li>
+    </loadAfter>
+
+</ModMetaData>

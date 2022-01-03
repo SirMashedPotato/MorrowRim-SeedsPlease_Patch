@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Volcanic Ashlands</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+		
+			<!-- seeds -->
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_LeatherCap</defName>
+							<label>leather cap spores</label>
+							<sources>
+								<li>MorrowRim_LeatherCap</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/LeatherCap</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+				</value>
+			</li>
+
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

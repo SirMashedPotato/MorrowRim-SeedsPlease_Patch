@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+		
+		<li Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[defName="MorrowRim_WoodFromCorkbulb"]/recipeUsers</xpath>
+			<value>
+				<li>PlantProcessingTable</li>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationAdd"> 
+			<xpath>/Defs/RecipeDef[defName="MorrowRim_WoodFromCorkbulb_Bulk"]/recipeUsers</xpath>
+			<value>
+				<li>PlantProcessingTable</li>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+	
+			<!-- seeds -->
+			 
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_AshYam</defName>
+					<label>ash yam seeds</label>
+					<sources>
+						<li>MorrowRim_AshYam</li>
+						<li>MorrowRim_AshYam_Wild</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Ashyam</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+			  
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_HackleLo</defName>
+					<label>hackle-Lo seeds</label>
+					<sources>
+						<li>MorrowRim_HackleLo</li>
+						<li>MorrowRim_HackleLo_Wild</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Hacklelo</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_Marshmerrow</defName>
+					<label>marshmerrow seeds</label>
+					<sources>
+						<li>MorrowRim_Marshmerrow</li>
+						<li>MorrowRim_Marshmerrow_Wild</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Marshmerrow</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_Corkbulb</defName>
+					<label>corkbulb seeds</label>
+					<sources>
+						<li>MorrowRim_CorkBulb</li>
+						<li>MorrowRim_CorkBulb_Wild</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Corkbulb</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_Trama</defName>
+					<label>trama seeds</label>
+					<sources>
+						<li>MorrowRim_Trama</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Tramaroot</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_MuckSponge</defName>
+					<label>muck sponge spores</label>
+					<sources>
+						<li>MorrowRim_MuckSponge</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Mucksponge</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_EmporerParasol</defName>
+					<label>emporer parasol spores</label>
+					<sources>
+						<li>MorrowRim_EmporerParasol</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Emperorparasol</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_Scathecraw</defName>
+					<label>scathecraw seeds</label>
+					<sources>
+						<li>MorrowRim_Scathecraw</li>
+						<li>MorrowRim_Scathecraw_Wild</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Scathecraw</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_Scribcabbage</defName>
+					<label>scrib cabbage seeds</label>
+					<sources>
+						<li>MorrowRim_ScribCabbage</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Scribcabbage</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_Funnelcap</defName>
+					<label>funnel cap spores</label>
+					<sources>
+						<li>MorrowRim_FunnelCap</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Funnelcap</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_Kreshweed</defName>
+					<label>kreshweed seeds</label>
+					<sources>
+						<li>MorrowRim_Kreshweed</li>
+						<li>MorrowRim_Kreshweed_Wild</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/Kreshweed</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_ParasolMushroom</defName>
+					<label>parasol mushroom spores</label>
+					<sources>
+						<li>MorrowRim_ParasolMushroom</li>
+						<li>MorrowRim_ParasolMushroomCultivated</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/ParasolMushroom</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+				
+				<SeedsPlease.SeedDef ParentName="SeedBase">
+					<defName>Seed_MorrowRim_AshHayGrass</defName>
+					<label>grazelands haygrass seeds</label>
+					<sources>
+						<li>MorrowRim_AshHayGrass</li>
+					</sources>
+					<graphicData><texPath>Things/Item/Seeds/AshHayGrass</texPath></graphicData>
+				</SeedsPlease.SeedDef>
+
+			<!-- recipes -->
+			
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_AshYam</defName>
+					<label>extract ash-yam seeds</label>
+					<description>Extract seeds from raw ash yam.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawAshYam</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawAshYam</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_AshYam>20</Seed_MorrowRim_AshYam>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_HackleLo</defName>
+					<label>extract hackle-lo seeds</label>
+					<description>Extract seeds from raw hackle-lo.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawHackleLo</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawHackleLo</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_HackleLo>20</Seed_MorrowRim_HackleLo>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_Marshmerrow</defName>
+					<label>extract marshmerrow seeds</label>
+					<description>Extract seeds from raw marshmerrow.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawMarshmerrow</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawMarshmerrow</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_Marshmerrow>20</Seed_MorrowRim_Marshmerrow>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_Corkbulb</defName>
+					<label>extract corkbulb seeds</label>
+					<description>Extract seeds from raw corkbulb.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawCorkbulb</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawCorkbulb</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_Corkbulb>10</Seed_MorrowRim_Corkbulb>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_MuckSponge</defName>
+					<label>extract muck sponge spores</label>
+					<description>Extract spores from muck.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_Muck</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_Muck</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_MuckSponge>10</Seed_MorrowRim_MuckSponge>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_Scathecraw</defName>
+					<label>extract scathecraw seeds</label>
+					<description>Extract seeds from raw scathecraw.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawScathecraw</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawScathecraw</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_Scathecraw>20</Seed_MorrowRim_Scathecraw>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
+
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_Scribcabbage</defName>
+					<label>extract scrib cabbage seeds</label>
+					<description>Extract seeds from raw scrib cabbage.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_RawScribCabbage</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_RawScribCabbage</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_Scribcabbage>20</Seed_MorrowRim_Scribcabbage>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing__Fragile</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_Kreshweed</defName>
+					<label>extract kreshweed seeds</label>
+					<description>Extract seeds from kresh fiber cloth.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>MorrowRim_KreshFiber</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>MorrowRim_KreshFiber</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_Kreshweed>10</Seed_MorrowRim_Kreshweed>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
+				
+				<RecipeDef ParentName="ExtractSeed">
+					<defName>MorrowRim_ExtractSeed_AshHayGrass</defName>
+					<label>extract grazelands haygrass seeds</label>
+					<description>Extract seeds from haygrass.</description>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Hay</li>
+						  </thingDefs>
+						</filter>
+						<count>5</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>Hay</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Seed_MorrowRim_AshHayGrass>30</Seed_MorrowRim_AshHayGrass>
+					</products>
+					<researchPrerequisite>MorrowRim_AshSowing</researchPrerequisite>
+				</RecipeDef>
+
+			</value>
+			</li>
+			
+			<!-- patch for if Grazelands is loaded -->
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>MorrowRim - Grazelands</li>
+				</mods> 
+						
+				<match Class="PatchOperationSequence">
+					<operations>
+			
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/SeedsPlease.SeedDef[defName="Seed_MorrowRim_AshHayGrass"]/sources</xpath>
+							<value>
+								<li>MorrowRim_AshHayGrassWild</li>
+							</value>
+						</li>
+
+					</operations>
+				</match>
+			</li>
+
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>

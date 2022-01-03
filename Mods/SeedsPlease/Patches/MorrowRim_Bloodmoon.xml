@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>MorrowRim - Bloodmoon</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+
+		<operations>
+		
+			<!-- seeds -->
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<SeedsPlease.SeedDef ParentName="SeedBase">
+							<defName>Seed_MorrowRim_Wolfsbane</defName>
+							<label>wolfsbane seeds</label>
+							<sources>
+								<li>MorrowRim_Wolfsbane</li>
+							</sources>
+							<graphicData><texPath>Things/Item/Seeds/Wolfsbane</texPath></graphicData>
+						</SeedsPlease.SeedDef>
+						
+				</value>
+			</li>
+			<!-- recipe -->
+			
+			<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					
+						<RecipeDef ParentName="ExtractSeed">
+							<defName>MorrowRim_ExtractSeed_Wolfsbane</defName>
+							<label>extract wolfsbane spores</label>
+							<description>Extract seeds from wolfsbane extract.</description>
+							<ingredients>
+							  <li>
+								<filter>
+								  <thingDefs>
+									<li>MorrowRim_WolfsbaneExtract</li>
+								  </thingDefs>
+								</filter>
+								<count>6</count>
+							  </li>
+							</ingredients>
+							<fixedIngredientFilter>
+							  <thingDefs>
+								<li>MorrowRim_WolfsbaneExtract</li>
+							  </thingDefs>
+							</fixedIngredientFilter>
+							<products>
+							  <Seed_MorrowRim_Wolfsbane>3</Seed_MorrowRim_Wolfsbane>
+							</products>
+							<researchPrerequisite>MorrowRim_LycanthropicElixirs</researchPrerequisite>
+						</RecipeDef>
+				</value>
+			</li>
+			
+		</operations>
+
+    </match>
+  </Operation>
+
+</Patch>
